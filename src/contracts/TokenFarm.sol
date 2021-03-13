@@ -34,8 +34,6 @@ contract TokenFarm{
 		// address(this) adress of the contract instance
 		daiToken.transferFrom(msg.sender, address(this), _amount); //(from, to , amount)
 
-
-
 		//Update the staking balance hashtable
 		stakingBalance[msg.sender] = stakingBalance[msg.sender] + _amount;
 
